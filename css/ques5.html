@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Plans</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    .pricing-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .plan {
+      flex: 1 1 300px;
+      background-color: #fff;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 30px 20px;
+      transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .plan:hover {
+      transform: scale(1.05);
+      background-color: #eaf4ff;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .plan h2 {
+      font-size: 1.5rem;
+      color: #0044cc;
+      margin-bottom: 15px;
+    }
+
+    .plan ul {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    .plan ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .plan .price {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #111;
+      margin: 15px 0;
+    }
+
+    .plan a {
+      text-decoration: none;
+      background-color: #0044cc;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .plan a:hover {
+      background-color: #002a80;
+    }
+
+    .popular {
+      border: 3px solid #ff9800;
+      background-color: #fff3e0;
+    }
+
+    @media (max-width: 800px) {
+      .pricing-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .plan {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Our Pricing Plans</h1>
+
+  <div class="pricing-container">
+    <div class="plan">
+      <h2>Basic</h2>
+      <ul>
+        <li>✔ 10 GB Storage</li>
+        <li>✔ 1 Domain</li>
+        <li>✔ Email Support</li>
+        <li>✖ Advanced Analytics</li>
+      </ul>
+      <div class="price">$9/month</div>
+      <a href="#">Choose Plan</a>
+    </div>
+
+    <div class="plan popular">
+      <h2>Standard</h2>
+      <ul>
+        <li>✔ 100 GB Storage</li>
+        <li>✔ 5 Domains</li>
+        <li>✔ Priority Support</li>
+        <li>✔ Analytics Dashboard</li>
+      </ul>
+      <div class="price">$29/month</div>
+      <a href="#">Choose Plan</a>
+    </div>
+
+    <div class="plan">
+      <h2>Premium</h2>
+      <ul>
+        <li>✔ Unlimited Storage</li>
+        <li>✔ Unlimited Domains</li>
+        <li>✔ 24/7 Support</li>
+        <li>✔ Custom Features</li>
+      </ul>
+      <div class="price">$49/month</div>
+      <a href="#">Choose Plan</a>
+    </div>
+  </div>
+</body>
+</html>

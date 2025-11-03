@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete CSS Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      background: linear-gradient(to right, #2c3e50, #4ca1af);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.8em;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 70vh;
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+    }
+
+    /* About Section */
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 60px 40px;
+      background-color: #f4f4f4;
+    }
+
+    .about-text, .about-img {
+      flex: 1 1 400px;
+      padding: 20px;
+    }
+
+    .about-img img {
+      width: 100%;
+      border-radius: 10px;
+      border: 4px solid #ddd;
+      outline: 2px solid rgba(0,0,0,0.1);
+    }
+
+    /* Services Section */
+    .services {
+      padding: 60px 40px;
+      background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    }
+
+    .services h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
+
+    .service-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .service {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      border: 2px solid #ddd;
+      outline: 2px solid rgba(0,0,0,0.05);
+      flex: 1 1 250px;
+      max-width: 300px;
+      text-align: center;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 60px 40px;
+      background-color: #f9f9f9;
+    }
+
+    .contact h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #4ca1af;
+      outline: none;
+    }
+
+    button {
+      background-color: #4ca1af;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #2c3e50;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+      }
+      .service-boxes {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Welcome to My Creative Space</h2>
+      <p>Design. Develop. Deliver — with precision and passion.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate web designer and developer dedicated to crafting responsive, 
+        modern, and user-friendly websites. With a strong grasp of the CSS Box Model, 
+        I ensure every element aligns perfectly, maintaining both aesthetics and performance.
+      </p>
+    </div>
+    <div class="about-img">
+      <img src="https://via.placeholder.com/500x300" alt="About Image">
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-boxes">
+      <div class="service">
+        <h3>Web Design</h3>
+        <p>Beautiful, responsive, and accessible designs tailored to your brand identity.</p>
+      </div>
+      <div class="service">
+        <h3>Development</h3>
+        <p>Clean, efficient, and optimized code for seamless functionality and performance.</p>
+      </div>
+      <div class="service">
+        <h3>SEO & Analytics</h3>
+        <p>Boost visibility and performance with advanced SEO and tracking tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 My Portfolio | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

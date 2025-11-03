@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newspaper Layout</title>
+  <style>
+    body {
+      background-color: #f4f1ea;
+      font-family: "Georgia", serif;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      column-count: 3;
+      column-gap: 40px;
+      text-align: justify;
+    }
+
+    h1 {
+      column-span: all;
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    img {
+      float: left;
+      margin: 10px 20px 10px 0;
+      width: 180px;
+      border-radius: 8px;
+    }
+
+    p {
+      margin-bottom: 1em;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        column-count: 1;
+      }
+
+      img {
+        width: 100%;
+        float: none;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>The Digital Times — Technology & Innovation</h1>
+
+    <img src="https://via.placeholder.com/180" alt="Tech News Image">
+
+    <p>
+      The rapid growth of artificial intelligence has revolutionized industries across the globe. From healthcare to finance, AI-driven solutions are reshaping the way businesses operate and individuals interact with technology.
+    </p>
+    <p>
+      In recent years, automation has not only improved efficiency but also opened up new opportunities in creative sectors such as content generation, design, and music composition. As a result, the boundary between human and machine creativity continues to blur.
+    </p>
+    <p>
+      Meanwhile, environmental sustainability has emerged as a top priority for tech companies. Green data centers and energy-efficient cloud systems are being adopted to minimize carbon footprints while maintaining performance standards.
+    </p>
+    <p>
+      Experts believe that the next decade will see a surge in AI ethics and regulatory frameworks to ensure responsible innovation. Governments and organizations are collaborating globally to define transparent AI governance models.
+    </p>
+    <p>
+      Despite challenges, the digital future looks promising as humans and machines work together to solve the world's most pressing issues through innovation and intelligence.
+    </p>
+  </div>
+
+</body>
+</html>
