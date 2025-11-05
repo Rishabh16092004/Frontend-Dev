@@ -1,0 +1,120 @@
+/* === General Page Styling === */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* === Animation Container (Flex Centering) === */
+.animation-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    height: 80vh;
+    text-align: center;
+}
+
+/* === Common Style for Each Animation Block === */
+.animation-box {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 1.5rem;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* === 1️⃣ Moving Box Animation === */
+.move-box::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #007bff;
+    border-radius: 8px;
+    animation: moveBox 3s ease-in-out infinite alternate;
+}
+
+/* Keyframes for Moving Box */
+@keyframes moveBox {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(80px); }
+    100% { transform: translateX(-80px); }
+}
+
+/* === 2️⃣ Bouncing Ball Animation === */
+.ball {
+    width: 60px;
+    height: 60px;
+    background-color: #28a745;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 40px;
+    animation: bounce 1.5s ease-in-out infinite;
+}
+
+/* Keyframes for Bouncing Ball */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-120px); }
+}
+
+/* === 3️⃣ Color-Changing Text Animation === */
+.animated-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    animation: colorChange 4s ease-in-out infinite alternate;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+/* Keyframes for Color Changing Text */
+@keyframes colorChange {
+    0% { color: #e74c3c; }
+    33% { color: #f1c40f; }
+    66% { color: #2ecc71; }
+    100% { color: #3498db; }
+}
+
+/* === Footer === */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    .animation-area {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .animation-box {
+        width: 80%;
+    }
+}

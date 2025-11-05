@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing Comparison Page</title>
+    <link rel="stylesheet" href="q8.css">
+</head>
+<body>
+<header>
+    <h1>Box-Sizing Comparison</h1>
+    <p>Understanding the difference between <code>content-box</code> and <code>border-box</code></p>
+</header>
+
+<main>
+    <section class="comparison-container">
+        <!-- Box 1: Default box-sizing -->
+        <div class="box content-box">
+            <h3>Default: content-box</h3>
+            <p>The total width = content + padding + border.</p>
+        </div>
+
+        <!-- Box 2: Border-box -->
+        <div class="box border-box">
+            <h3>box-sizing: border-box</h3>
+            <p>The total width includes content, padding, and border within the set width.</p>
+        </div>
+    </section>
+
+    <section class="explanation">
+        <h2>How Box-Sizing Affects Layout</h2>
+        <p>
+            By default, elements use <strong>content-box</strong> — the width and height only apply to the content area.
+            Padding and border are added outside, increasing the total size.
+        </p>
+        <p>
+            When using <strong>border-box</strong>, padding and borders are included inside the defined width and height,
+            making layout design more predictable and easier to manage.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Box-Sizing Showcase | All Rights Reserved</p>
+</footer>
+</body>
+</html>

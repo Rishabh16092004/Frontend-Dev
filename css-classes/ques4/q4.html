@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Practice Page</title>
+    <link rel="stylesheet" href="q4.css">
+</head>
+<body>
+<header>
+    <h1>CSS Selectors Practice Page</h1>
+    <p class="subtitle">Exploring element, class, ID, attribute, and combinator selectors</p>
+</header>
+
+<main>
+    <section class="content">
+        <h2>1️⃣ Element Selectors</h2>
+        <p>This paragraph is styled using an <strong>element selector</strong> that targets all &lt;p&gt; tags.</p>
+
+        <h2>2️⃣ Class and ID Selectors</h2>
+        <p class="highlight">This text uses a <strong>class selector</strong> (.highlight).</p>
+        <p id="special">This text uses an <strong>ID selector</strong> (#special).</p>
+
+        <h2>3️⃣ Attribute Selectors</h2>
+        <a href="https://example.com" target="_blank">External Link (https)</a><br>
+        <a href="http://example.com">Internal Link (http)</a><br>
+        <input type="text" placeholder="Type something...">
+
+        <h2>4️⃣ Combinator Selectors</h2>
+        <div class="combinator-demo">
+            <p>Direct child selector (<code>div > p</code>): This paragraph is directly inside the div.</p>
+            <span>
+                    <p>Descendant selector (<code>div p</code>): This paragraph is nested deeper inside the div.</p>
+                </span>
+        </div>
+
+        <div class="sibling-demo">
+            <h3>Heading</h3>
+            <p>This paragraph uses the <code>+</code> adjacent sibling combinator.</p>
+            <p>This one uses the <code>~</code> general sibling combinator.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 CSS Selectors Practice | All rights reserved.</p>
+</footer>
+</body>
+</html>
