@@ -1,0 +1,60 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Borders & Padding — Demonstration</title>
+<link rel="stylesheet" href="DemonstrationPage.css">
+</head>
+<body>
+<header class="page-header">
+    <h1>Borders & Padding — Demonstration</h1>
+    <p class="lead">Examples of border styles, radii, padding and hover transitions (no JavaScript).</p>
+</header>
+
+<main>
+    <section class="controls">
+        <p class="note">Hover any box to see the border-color transition.</p>
+    </section>
+
+    <section class="demo" aria-label="Border and padding examples">
+        <!-- Flex container holds the example boxes horizontally -->
+        <article class="box box-solid">
+            <h2>Solid</h2>
+            <p class="desc">border: 3px solid; padding: 8px;</p>
+        </article>
+
+        <article class="box box-dashed">
+            <h2>Dashed</h2>
+            <p class="desc">border: 3px dashed; padding: 16px;</p>
+        </article>
+
+        <article class="box box-double">
+            <h2>Double</h2>
+            <p class="desc">border: 6px double; padding: 24px;</p>
+        </article>
+
+        <article class="box box-groove">
+            <h2>Groove + Rounded</h2>
+            <p class="desc">border: 5px groove; border-radius: 16px; padding: 12px;</p>
+        </article>
+
+        <article class="box box-rounded">
+            <h2>Rounded Large</h2>
+            <p class="desc">border-radius: 999px; padding: 20px;</p>
+        </article>
+    </section>
+
+    <section class="explain">
+        <h3>Notes</h3>
+        <ul>
+            <li>Boxes are aligned using Flexbox with wrapping for small screens.</li>
+            <li>Padding values show how content spacing changes inside the border.</li>
+            <li>Hover effect changes the border color and adds a subtle transform.</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; Demonstration — Borders & Padding</p>
+</footer>
+</body>
+</html>
