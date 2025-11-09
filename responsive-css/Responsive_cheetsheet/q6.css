@@ -1,0 +1,67 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+/* Grid Container */
+.cheat-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Cheat Sheet Box Styling */
+.cheat-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.cheat-box h2 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #222;
+}
+
+.cheat-box p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Hover Interactivity */
+.cheat-box:hover {
+    transform: translateY(-8px);
+    background: #fafafa;
+}
+
+/* Mobile Layout – Below 700px */
+@media (max-width: 700px) {
+
+    /* Stacked layout: Heading becomes key and text appears below */
+    .cheat-box {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .cheat-box h2 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+        color: #000;
+    }
+
+    .cheat-box p {
+        font-size: 1rem;
+    }
+}

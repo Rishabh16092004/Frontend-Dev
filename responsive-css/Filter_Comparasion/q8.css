@@ -1,0 +1,62 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 30px;
+}
+
+/* Main Container */
+.comparison-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    align-items: center;
+}
+
+/* Image Box */
+.image-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 8px;
+    transition: filter 0.4s ease;
+}
+
+/* Filter on right image */
+.filtered img {
+    filter: brightness(60%);
+}
+
+/* Remove filter smoothly on hover */
+.filtered img:hover {
+    filter: brightness(100%);
+}
+
+/* Responsive Layout (Below 700 px) */
+@media (max-width: 700px) {
+    .comparison-container {
+        flex-direction: column;
+    }
+
+    .image-box {
+        width: 100%;
+    }
+
+    .image-box h2 {
+        margin-bottom: 10px;
+    }
+}
