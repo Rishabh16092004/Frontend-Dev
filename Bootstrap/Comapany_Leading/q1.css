@@ -1,0 +1,15 @@
+/* Minimal custom CSS: keep styling mainly via Bootstrap classes */
+
+/* Hero section visuals */
+.hero {
+  /* Soft gradient to make the hero feel premium */
+  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+  min-height: 60vh; /* Tall enough to feel like a hero area */
+  padding: 4rem 0;  /* Vertical spacing */
+}
+
+/* Optional: improve card hover feel lightly (pure CSS, no JS) */
+.card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
