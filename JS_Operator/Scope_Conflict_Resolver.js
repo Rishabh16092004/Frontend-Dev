@@ -7,11 +7,9 @@ function calculateSalary(isPermanent){
     if(isPermanent === true){
         totalSalary = baseSalary + bonus;
     }
-
     console.log("Employee Permanent:",isPermanent);
     console.log("Total Salary:",totalSalary);
 }
-
 console.log("GLOBAL bonus value before function calls:", bonus);
 
 calculateSalary(true);
