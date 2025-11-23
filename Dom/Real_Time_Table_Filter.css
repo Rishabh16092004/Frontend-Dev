@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+input {
+    padding: 8px;
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.hidden {
+    display: none;
+}
+
+#noResultMsg {
+    font-size: 18px;
+    color: red;
+    margin-bottom: 10px;
+}
