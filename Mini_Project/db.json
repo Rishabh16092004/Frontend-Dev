@@ -1,0 +1,25 @@
+{
+  "students": [
+    {
+      "name": "Rishabh Jaiswal",
+      "section": "K",
+      "marks": 82,
+      "grade": "A+",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Vikram",
+      "section": "B",
+      "marks": 72,
+      "grade": "B"
+    },
+    {
+      "id": "e358",
+      "name": "Rishabh Pathak",
+      "section": "K",
+      "marks": 75,
+      "grade": "A"
+    }
+  ]
+}
