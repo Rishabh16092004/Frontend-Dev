@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Vintage Leather Wallet",
+      "price": 2499,
+      "image": "https://example.com/images/wallet1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Noise-Cancelling Headphones",
+      "price": 7999,
+      "image": "https://example.com/images/headphones1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Stainless Steel Water Bottle",
+      "price": 899,
+      "image": "https://example.com/images/bottle1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Ergonomic Wireless Mouse",
+      "price": 1999,
+      "image": "https://example.com/images/mouse1.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Portable Bluetooth Speaker",
+      "price": 2999,
+      "image": "https://example.com/images/speaker1.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Minimalist Desk Lamp",
+      "price": 1599,
+      "image": "https://example.com/images/lam p1.jpg"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "users": [
+    { "id": 1, "name": "Priya Rao", "email": "priya@example.com" },
+    { "id": 2, "name": "Omar Farooq", "email": "omar@example.com" },
+    { "id": 3, "name": "Lina Gomez", "email": "lina@example.com" },
+    { "id": 4, "name": "Jacob Lee", "email": "jacob@example.com" },
+    { "id": 5, "name": "Meera Iyer", "email": "meera@example.com" }
+  ],
+  "products": [
+    { "id": 101, "name": "Classic Watch", "price": 4999 },
+    { "id": 102, "name": "Running Shoes", "price": 3499 },
+    { "id": 103, "name": "Smart Thermos", "price": 1299 },
+    { "id": 104, "name": "Laptop Sleeve", "price": 1599 },
+    { "id": 105, "name": "Wireless Charger", "price": 999 }
+  ],
+  "orders": [
+    { "id": 1001, "userId": 1, "productId": 101, "quantity": 1, "total": 4999 },
+    { "id": 1002, "userId": 2, "productId": 103, "quantity": 2, "total": 2598 },
+    { "id": 1003, "userId": 3, "productId": 105, "quantity": 1, "total": 999 },
+    { "id": 1004, "userId": 2, "productId": 104, "quantity": 1, "total": 1599 },
+    { "id": 1005, "userId": 5, "productId": 102, "quantity": 1, "total": 3499 }
+  ]
+}

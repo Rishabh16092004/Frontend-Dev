@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Write unit tests for auth module",
+      "priority": "high",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Refactor header component",
+      "priority": "medium",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "title": "Add search debounce",
+      "priority": "low",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "title": "Fix CSS on mobile",
+      "priority": "high",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "title": "Update README for contributors",
+      "priority": "low",
+      "completed": true
+    },
+    {
+      "id": 6,
+      "title": "Implement bulk-export feature",
+      "priority": "medium",
+      "completed": false
+    }
+  ]
+}
